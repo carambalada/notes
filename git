@@ -1,0 +1,11 @@
+Make a repository:
+ https://github.com/carambalada/tar-bar.git
+
+mkdir tar-bar
+cd tar-bar
+git init
+#edit a_file
+git add a_file
+git commit -m "comment"
+git remote add origin https://github.com/carambalada/tar-bar.git
+git push -u origin master
