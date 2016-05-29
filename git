@@ -1,6 +1,15 @@
 Make a repository:
  https://github.com/carambalada/tar-bar.git
 
+Web:
+ make a branch
+ edit some files
+ commit
+ pull request
+ pull request again
+ merge with the master
+ 
+ Console:
 mkdir tar-bar
 cd tar-bar
 git init
