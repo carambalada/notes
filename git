@@ -1,3 +1,4 @@
+config: ~/.gitconfig
 Make a repository:
  https://github.com/carambalada/tar-bar.git
 
@@ -13,8 +14,18 @@ Web:
 mkdir tar-bar
 cd tar-bar
 git init
-#edit a_file
+
+#edit a_file:
 git add a_file
+#add  everything in the directory:
+git add .
+
+#what is about to be commited:
+git diff [--cached]
+git status
+
 git commit -m "comment"
+
+git log [-p]
 git remote add origin https://github.com/carambalada/tar-bar.git
 git push -u origin master
