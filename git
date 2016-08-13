@@ -1,31 +1,35 @@
-config: ~/.gitconfig
-Make a repository:
- https://github.com/carambalada/tar-bar.git
+Making the config: ~/.gitconfig:
+ git config --global user.name <name>
+ git config --global user.email <email>
 
-Web:
- make a branch
- edit some files
- commit
+Cloning from the web repo:
+ git clone https://github.com/carambalada/notes.git
+ # it makes the objects:
+ # notes/
+ #  .git/
+ #  git 
+
+Making a project from scrach:
+ mkdir tar-bar
+ cd tar-bar
+ git init
+ # edit a_file
+ git add a_file
+ git commit -m "comment"
+
+ # make a repo: https://github.com/carambalada/tar-bar.git
+ git remote add origin https://github.com/carambalada/tar-bar.git
+ git push -u origin master
+
+Getting info:
+ # diff:
+ git diff [--cached]
+ # status:
+ git status
+ # log:
+ git log [-p]
+
+### Revise it ###
  pull request
  pull request again
  merge with the master
- 
- Console:
-mkdir tar-bar
-cd tar-bar
-git init
-
-#edit a_file:
-git add a_file
-#add  everything in the directory:
-git add .
-
-#what is about to be commited:
-git diff [--cached]
-git status
-
-git commit -m "comment"
-
-git log [-p]
-git remote add origin https://github.com/carambalada/tar-bar.git
-git push -u origin master
